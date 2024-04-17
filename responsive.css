@@ -1,0 +1,136 @@
+@media screen and (max-width: 1201px) {
+  .home-content h3 {
+    font-size: 1.9rem;
+  }
+  .home-content h1 {
+    font-size: 4rem;
+  }
+  section.about-page{
+  gap: 5rem;
+
+  }
+  .home-content p {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 1054px) { 
+  section.about-page{
+    flex-direction: column;
+    padding-block: 3rem;
+    gap:0;
+
+  }
+  section.about-page div, .about-page-img {
+  max-width: calc(100% - 15%);
+  /* border: 1px solid red; */
+  /* position: relative; */
+}
+section.about-page div:nth-child(2){
+  margin-bottom: 2.5rem;
+}
+.about-page-img::before {
+  display: none;
+}
+.about-page-img img {
+  width: 100%;
+  position: relative;
+
+  top: -150px;
+  /* border: 1px solid red; */
+}
+
+.about-header h1 {
+  display: none;
+}  
+}
+
+@media screen and (max-width: 1024px) {
+  .home-content h3 {
+    font-size: 1.5rem;
+  }
+  .home-content h1 {
+    font-size: 3rem;
+  }
+  .home-content p {
+    font-size: 1.3rem;
+  }
+  section.about-page div p {
+    font-size: 2.5rem;
+  }
+  section.about-page div p {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 769px) {
+  .navbar {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(50px);
+    width: 70%;
+    height: 100vh;
+  }
+  .skills-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+  }
+  .skills,
+  .last-experience {
+    width: 100%;
+  }
+
+  .navbar a {
+    display: block;
+    /* padding: 2rem 0; */
+    font: 1.1rem;
+    text-align: center;
+    margin: 4rem 0;
+    color: #fff;
+  }
+  #menu-icon {
+    display: inline-block;
+    font-size: 5rem;
+  }
+  #check:checked + .icons #menu-icon {
+    display: none;
+  }
+  #check:checked ~ .icons #close-icon {
+    display: block;
+  }
+  #check:checked ~ nav[class="navbar"] {
+    display: block;
+  }
+
+  .home div.home-content {
+    flex-flow: column-reverse wrap;
+  }
+  .home-img img {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .container {
+    text-align: center;
+  }
+  .about {
+    flex-flow: column-reverse wrap;
+    gap: 3rem;
+  }
+  .about-content,
+  .about-content h2 {
+    text-align: center;
+  }
+  .about img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 487px) {
+  .home-content h1 {
+    font-size: 1.9rem;
+  }
+}
