@@ -195,6 +195,7 @@ body {
   color: #00abf0;
   text-decoration: none;
   transition: 0.5s;
+  cursor: pointer;
 }
 /* .home-sci a:hover {
   color: #081b29;
